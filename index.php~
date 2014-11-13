@@ -1,5 +1,10 @@
 <?php 
-	@session_start();
+	$conn_string = "";
+        $dbconn =pg_connect($conn_string)
+                 or die('no puedo conectarme:' . pg_last_error());
+        echo "Conectado a la Base de Datos!";
+
+        @session_start();
 	require_once('inc/adodb5/adodb.inc.php');
 	require_once('inc/conex.php');
 

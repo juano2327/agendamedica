@@ -1,5 +1,6 @@
 <?php 
-	$conn_string = "";
+	$conn_string = "postgres://ggxbbygxmwmdov:8psoXO_20KSMvoFQYN7DzbpVBi@ec2-54-83-5-151.compute-1.amazonaws.com:5432/d8f7vpdkg3cgu8";
+
         $dbconn =pg_connect($conn_string)
                  or die('no puedo conectarme:' . pg_last_error());
         echo "Conectado a la Base de Datos!";
